@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="medias/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="medias/css/animate.min.css">
+    <link rel="stylesheet" href="medias/css/styleRDV.css">
+    <title>Salon Créa'Tif. Prendre RDV</title>
+</head>
+<body>
+    <header> 
+        <div id="logo">
+            <i class="fa-solid fa-scissors"></i>
+            <h2><a href="index.html">Créa'Tif</a></h2>
+        </div>
+        <nav id="nav1">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="coiffeur.html">Coiffeur</a></li>
+                <li><a href="barbier.html">Barbier</a></li>
+                <li class="on"><a href="rdv.html">Prendre RDV</a></li>
+            </ul>
+        </nav>
+        <div id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header> 
+
+    <div id="box">
+        <div id="image"></div>
+        <div id="boxRDV">
+            <h1>Prendre RDV</h1>
+
+            <div class="accesCompte">
+                <h2>Accès Compte Client</h2>
+                <p id="identifiant">Entrez votre identifiant</p>
+                <div class="boxLogin">
+                    <label for="login" id="labelLogin">Votre login</label>
+                    <input type="text" name="login" id="inputLogin">
+                </div>
+                <div id="buttonNext" onclick="suivant()"><input type="submit" value="Suivant"></div>
+                <p>Pas encore de compte client ?</p>
+                <a href="creer-compte.html">Créez votre compte</a>
+            </div>
+
+            <div id="accesPassword">
+                <div id="logConnexion">
+                    <p>Login de connexion</p>
+                    <p id="afficherLogin"> =>  <i class="fa-solid fa-check"></i></p>
+                    <p id="modifLogin"><i class="fa-solid fa-angles-left"></i>Modifier le login</p>
+                </div>
+
+                <div id="boxFormulaire">
+                    <form action="traitement.html" id="formulaire" method="post"> 
+                        <p id="titrePassWord">Entrez votre mot de passe</p>
+                        <div id="boxPassword">
+                            <label for="password" id="labelPassword">Votre PassWord</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <p id="affichePass"><i class="fa-solid fa-caret-right"></i> <span>Afficher le mot de passe</span></p>
+                        <input type="submit" value="Valider">
+                        <p id="open"><i class="fa-solid fa-caret-right"></i>Mot de passe oublié ?</p>
+                    </form>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div id="pop">
+       <div class="popup">
+            <div class="conteneur animate__animated">
+                <div class="close">&times</div>
+                <h1>Mot de passe oublié ?</h1>
+                <p><i class="fa-solid fa-arrow-right-to-bracket"></i>Entrez votre adresse mail :</p>
+                <input type="text" name="email" id="email">
+                <p id="explicationEmail"></p>
+                <input type="submit" value="Envoyer" id="envoyer">
+            </div>
+        </div> 
+    </div>
+
+    <div id="boxCookies">
+        <div id="cookies">
+            <p><strong>Ce site web utilise des cookies</strong></p>
+            <p id="textCookies">Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services. Refuser les cookies. En refusant les cookies, vous quitterez alors notre site.</p>
+            <div id="buttonAccept"><button>Accepter</button></div> 
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footerdiv" id="prestation">
+            <strong>Nos prestations</strong> 
+            <ul>
+                <li>Coupe homme et femme</li>
+                <li>Coloration</li>
+                <li>Mèches et balayage</li>
+                <li>Soins capillaire</li>
+                <li>Barbier</li>
+            </ul>
+        </div>
+        <div class="footerdiv" id="navigation">
+            <strong>Navigation</strong> 
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="coiffeur.html">Coiffeur</a></li>
+                <li><a href="barbier.html">Barbier</a></li>
+                <li><a href="rdv.html">Prendre RDV</a></li>
+            </ul>
+        </div>
+        <div class="footerdiv" id="copyright">
+            <strong>&copy; All rights reserved</strong> 
+            <div id="reseau">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="medias/script/js-cookie.js"></script>
+    <script src="medias/script/scriptRDV.js"></script>
+
+</body>
+</html>

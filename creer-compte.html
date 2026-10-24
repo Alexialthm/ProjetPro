@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="medias/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="medias/css/styleCompte.css">
+    <title>Salon Créa'Tif. Creer Compte</title>
+</head>
+<body>
+    <div id="site">
+        <header> 
+            <div id="logo">
+                <i class="fa-solid fa-scissors"></i>
+                <h2><a href="index.html">Créa'Tif</a></h2>
+            </div>
+            <nav id="nav1">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="coiffeur.html">Coiffeur</a></li>
+                    <li><a href="barbier.html">Barbier</a></li>
+                    <li class="on"><a href="rdv.html">Prendre RDV</a></li>
+                </ul>
+            </nav>
+            <div id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header> 
+
+        <div id="boxTitre">
+            <h1>Créer votre Compte Client</h1>
+            <div id="triangle"></div>
+        </div>
+        
+        <section id="sectionForm">
+
+            <form action="traitement.html" method="post" id="formulaire"> 
+
+                <div class="champ">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="login" id="login" placeholder="Login">
+                </div>
+
+                <div class="champ" id="pass">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="Password" id="password" placeholder="Password">
+                </div>
+
+                <button id="generer">Générer un Password Aléatoire</button>
+
+                <div class="champ">
+                    <i class="fa-solid fa-at"></i>
+                    <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+
+                <p id="info"></p>
+
+                <input type="submit" value="Valider" id="valider">
+            </form>
+            
+        </section>
+        
+        <div id="boxCookies">
+            <div id="cookies">
+                <p><strong>Ce site web utilise des cookies</strong></p>
+                <p id="textCookies">Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic. Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse, qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services. Refuser les cookies. En refusant les cookies, vous quitterez alors notre site.</p>
+                <div id="buttonAccept"><button>Accepter</button></div> 
+            </div>
+            
+        </div>        
+
+        <footer>
+            <div class="footerdiv" id="prestation">
+                <strong>Nos prestations</strong> 
+                <ul>
+                    <li>Coupe homme et femme</li>
+                    <li>Coloration</li>
+                    <li>Mèches et balayage</li>
+                    <li>Soins capillaire</li>
+                    <li>Barbier</li>
+                </ul>
+            </div>
+            <div class="footerdiv" id="navigation">
+                <strong>Navigation</strong> 
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="coiffeur.html">Coiffeur</a></li>
+                    <li><a href="barbier.html">Barbier</a></li>
+                    <li><a href="rdv.html">Prendre RDV</a></li>
+                </ul>
+            </div>
+            <div class="footerdiv" id="copyright">
+                <strong>&copy; All rights reserved</strong> 
+                <div id="reseau">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="medias/script/js-cookie.js"></script>
+    <script src="medias/script/scriptCompte.js"></script>
+    
+</body>
+</html>

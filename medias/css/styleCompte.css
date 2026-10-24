@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anton&family=Bungee&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playwrite+NZ+Basic:wght@100..400&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anton&family=Bungee&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playwrite+NZ+Basic:wght@100..400&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wdth,wght@0,75..100,300;1,75..100,300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #807f7f;
+    font-size: 16px;
+}
+/*************** HEADER ***************/
+header {
+    background-color: #23292c;
+    color: #fff;
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px dashed #ccc;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+#logo {
+    margin-right: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+#logo i {
+    font-size: 20px;
+    color: #d2822e;
+    margin-left: 30px;
+}
+#logo h2 {
+    font-family: "Qwitcher Grypen";
+    font-size: 40px;
+    margin-left: 10px;  
+}
+#logo a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+#logo a:hover {
+    color: #d2822e;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+nav {
+    margin-right: 30px; 
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    list-style: none;
+    height: 80px;
+    line-height: 80px; 
+    padding: 0px 15px;
+    transition: 0.5s;
+}
+nav li:hover {
+    background-color: #555;
+}
+nav li.on {
+    background-color: #d2822e;
+}
+nav li.on a:hover {
+    color: #000;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px
+}
+
+#burger {
+    color: #fff;
+    display: none;
+    font-size: 30px;
+    position: absolute;
+    right: 40px;
+}
+#burger span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+    position: relative;
+    transition: 0.5s;
+}
+#burger.active span:nth-child(1) {
+    transform: rotate(45deg); 
+    top: 10px;
+}
+#burger.active span:nth-child(2) {
+    opacity: 0; 
+}
+#burger.active span:nth-child(3) {
+    transform: rotate(-45deg); 
+    top: -10px; 
+}
+/*************** HEADER ***************/
+
+/*************** BOX ***************/
+#boxTitre {
+    background-color: #23292c;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#boxTitre h1{
+    color: #d2822e;
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+#triangle {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    display: inline-block;
+    border-top: 150px solid #23292c;
+    border-bottom: 40px solid transparent ;
+    border-left: 40px solid transparent ;
+    border-right: 40px solid transparent ;   
+}
+/*************** BOX ***************/
+
+/*************** FORMULAIRE ***************/
+#sectionForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    padding: 50px;
+}
+#formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.champ {
+    font-size: 18px;
+    border: 1px solid #a4b8c3;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#pass {
+    margin-bottom: 0;
+}
+.champ i {
+    color: #ddd;
+    padding: 10px;
+    font-size: 20px;
+    color: #a4b8c3;
+}
+.champ input[type="text"] {
+    background: none;
+    border: none;
+    color: #000;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+    outline: none;
+}
+.champ input[type="text"]::placeholder {
+    color: #ddd;
+    font-size: 18px;
+}
+#generer {
+    color: #444;
+    background: none;
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#generer:hover {
+    background-color: #d2822e;
+    color: #000;
+    transition: 0.5s;
+}
+#formulaire #info {
+    text-align: center;
+    margin-top: 0;
+    color: #daa42f;
+    font-weight: bold;
+}
+#formulaire input[type="submit"] {
+    background: none;
+    text-decoration: none;
+    color: #d2822e;
+    font-size: 21px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 2px solid #d2822e;
+    border-radius: 25px;
+    padding: 10px;
+    transition: 0.5s;
+}
+#formulaire input[type="submit"]:hover {
+    background-color: #d2822e;
+    color: #fff;
+    transition: 0.5s;
+}
+/*************** FORMULAIRE ***************/
+
+/************ Zone Cookies ************/
+#boxCookies {
+    background-color: rgba(215, 158, 43, 0.95);
+    padding: 100px 200px;
+    border-top: 2px dashed #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+#boxCookies.active {
+    display: none;
+}
+#boxCookies p {
+    margin: 0;
+}
+#cookies {
+    width: 50%;
+}
+#textCookies {
+    color: #333;
+}
+#buttonAccept {
+    text-align: center;
+}
+#boxCookies button {
+    background: none;
+    color: #8d5111;
+    margin-top: 20px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 1px solid #8d5111;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#boxCookies button:hover {
+    background-color: #d2822e;
+    color: #fff;
+    transition: 0.5s;
+}
+/************ Zone Cookies ************/
+
+/*************** FOOTER ***************/
+footer {
+    background-color: #23292c;
+    height: 250px;
+    padding: 20px;
+    border-top: 2px dashed #ccc;  
+    display: flex;
+    justify-content: space-around;      
+}
+.footerdiv {
+    color: #d2822e;
+    font-size: 15px;
+    padding-top: 50px;
+}
+footer #navigation a {
+    text-decoration: none;
+    color: #d2822e;
+    transition: 0.4s;
+}
+footer #reseau {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;  
+}
+footer #reseau i {
+    color: #d2822e;
+    transition: 0.4s;
+}
+footer #reseau i:hover,footer #navigation a:hover {
+    color: #e49949;
+    transition: 0.4s;
+}
+/**************************************/
+
+/*************** Scrollbar **************/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #23292c;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #d2822e;
+    box-shadow: 0 -100vh 0 100vh #d2822e;
+}
+/****************************************/
+
+/********* ANIMATION Bandeau **********/
+@keyframes zoomImg { 
+    50% {
+        transform: scale(2); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/**************************************/
+
+@media screen and (max-width: 850px) {
+    nav {
+        margin-right: 0; 
+    }
+    nav ul {
+        position: fixed; 
+        left: -100vh;
+        height: 100vh;
+        width: 100%;
+        top:80px;
+        background-color: #2f3640;
+        flex-direction: column;
+        align-items: stretch; 
+        transition: 0.5s; 
+        z-index: 2;
+    }
+    nav ul.active {
+        left: 0;
+        height: 100vh;
+    }
+    nav li {
+        text-align: center;
+        padding: 20px;
+    }
+    #burger {
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    #boxCookies {
+        padding: 0;
+        padding-top: 50px;
+    }
+    
+    footer {
+        height: 100%; 
+        flex-wrap: wrap;
+    }
+    footer #navigation li {
+        margin-bottom: 20px;
+    }
+    footer #copyright {
+        text-align: center;
+        width: 100%;
+    }  
+}

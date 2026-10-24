@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anton&family=Bungee&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playwrite+NZ+Basic:wght@100..400&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anton&family=Bungee&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playwrite+NZ+Basic:wght@100..400&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wdth,wght@0,75..100,300;1,75..100,300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #ccc;
+    font-size: 16px;
+}
+
+/*************** Scrollbar **************/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #23292c;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #d2822e;
+    box-shadow: 0 -100vh 0 100vh #d2822e;
+}
+/*************** Scrollbar **************/
+
+/*************** HEADER ***************/
+header {
+    background-color: #23292c;
+    color: #fff;
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px dashed #ccc;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+#logo {
+    margin-right: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+#logo i {
+    font-size: 20px;
+    color: #d2822e;
+    margin-left: 30px;
+}
+#logo h2 {
+    font-family: "Qwitcher Grypen";
+    font-size: 40px;
+    margin-left: 10px;  
+}
+#logo a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+#logo a:hover {
+    color: #d2822e;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+nav {
+    margin-right: 30px; 
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    list-style: none;
+    height: 80px;
+    line-height: 80px;
+    padding: 0px 15px;
+    transition: 0.5s;
+}
+nav li:hover {
+    background-color: #555;
+}
+nav li.on {
+    background-color: #d2822e;
+}
+nav li.on a:hover {
+    color: #000;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px
+}
+
+#burger {
+    color: #fff;
+    display: none;
+    font-size: 30px;
+    position: absolute;
+    right: 40px;
+}
+#burger span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+    position: relative;
+    transition: 0.5s;
+}
+#burger.active span:nth-child(1) {
+    transform: rotate(45deg); 
+    top: 10px;
+}
+#burger.active span:nth-child(2) {
+    opacity: 0; 
+}
+#burger.active span:nth-child(3) {
+    transform: rotate(-45deg); 
+    top: -10px; 
+}
+/*************** HEADER ***************/
+
+/*************** Section ****************/
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;  
+}
+.section1 {
+    background-image: url(../img/coiffeur-1.jpg);
+}
+.section2 {
+    background-image: url(../img/coiffeur-2.jpg);
+}
+.section3 {
+    background-image: url(../img/coiffeur-3.jpg);
+}
+.section4 {
+    background-image: url(../img/coiffeur-4.jpg);
+}
+.texte {
+    text-align: center;
+    background-color: #db9142;
+    padding: 50px;
+    font-size: 19px;
+}
+.texte h1 {
+    letter-spacing: 5px;
+}
+.texte p {
+   color: #7c460b; 
+}
+.texte a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.texte a:hover {
+    color: #7c460b; 
+    transition: 0.5s;  
+}
+/****************************************/
+
+/************ Zone Cookies ************/
+#boxCookies {
+    background-color: rgba(215, 158, 43, 0.95);
+    padding: 100px 200px;
+    border-top: 2px dashed #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+#boxCookies.active {
+    display: none;
+}
+#boxCookies p {
+    margin: 0;
+}
+#cookies {
+    width: 50%;
+}
+#textCookies {
+    color: #333;
+}
+#buttonAccept {
+    text-align: center;
+}
+#boxCookies button {
+    background: none;
+    color: #8d5111;
+    margin-top: 20px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 1px solid #8d5111;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#boxCookies button:hover {
+    background-color: #d2822e;
+    color: #fff;
+    transition: 0.5s;
+}
+/************ Zone Cookies ************/
+
+/*************** FOOTER ***************/
+footer {
+    background-color: #23292c;
+    height: 250px;
+    padding: 20px;
+    border-top: 2px dashed #ccc;  
+    display: flex;
+    justify-content: space-around;      
+}
+.footerdiv {
+    color: #d2822e;
+    font-size: 15px;
+    padding-top: 50px;
+}
+footer #navigation a {
+    text-decoration: none;
+    color: #d2822e;
+    transition: 0.4s;
+}
+footer #reseau {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;  
+}
+footer #reseau i {
+    color: #d2822e;
+    transition: 0.4s;
+}
+footer #reseau i:hover,footer #navigation a:hover {
+    color: #e49949;
+    transition: 0.4s;
+}
+/**************************************/
+
+@media screen and (max-width: 850px) {
+    nav {
+        margin-right: 0; 
+    }
+    nav ul {
+        position: fixed; 
+        left: -100vh;
+        height: 100vh;
+        width: 100%;
+        top:80px;
+        background-color: #2f3640;
+        flex-direction: column;
+        align-items: stretch; 
+        transition: 0.5s; 
+        z-index: 2;
+    }
+    nav ul.active {
+        left: 0;
+        height: 100vh;
+    }
+    nav li {
+        text-align: center;
+        padding: 20px;
+    }
+    #burger {
+        display: block;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    #boxCookies {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    footer {
+        height: 100%; 
+        flex-wrap: wrap;
+    }
+    footer #navigation li {
+        margin-bottom: 20px;
+    }
+    footer #copyright {
+        text-align: center;
+        width: 100%;
+    }
+}
+
